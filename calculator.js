@@ -1,33 +1,25 @@
-var a;
-var b;
-var c;
-function B1() {
-	a=1;	
+var a="";
+var b="";
+var c="";
+function InNum(num) {		
+		a=a+num;	
+		a=a.toString();		
+		document.getElementById("activity").innerHTML = a;
+		return;
 }
-function B2() {
-	b=2;
+function Sum() {
+	b=b.toString();
+	b=b+a;
+	a="";	
+	document.getElementById("activity").innerHTML = a;
+		a = InNum(num);
+		document.getElementById("activity").innerHTML = a;		
+		c = a+b;
+		document.getElementById("activity").innerHTML = c;
 }
-function B3() {
-}
-function B4() {
-}
-function B5() {
-}
-function B6() {
-}
-function B7() {
-}
-function B8() {
-}
-function B9() {
-}
-function B0() {
-}
-function BC() {
-}
-function BE() {
-	document.getElementById("demo").innerHTML = c;
-}
-function BS() {
-	c = a+b;
+
+function Eq(){
+		a = parseInt(a,10);
+		b = parseInt(b,10);
+		document.getElementById("activity").innerHTML = a+b;
 }
